@@ -50,6 +50,5 @@ class ViewController: UIViewController {
         // Reset the current value
         currentValue = 0
         // Toggle the button title between "Let's go" and "Reset"
-        toggleButtonTitle()
     }
 }
