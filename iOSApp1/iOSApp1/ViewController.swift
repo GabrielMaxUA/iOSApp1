@@ -69,9 +69,9 @@ class ViewController: UIViewController {
     @IBAction func reset(){
                 button.setTitle("Let's Go!", for: .normal)
                 currentValue = 2
-                sumLabel.text = "0"
-                mLabel.text = "0"
-                pickedNumber.text = "0"
+                sumLabel.text = " "
+                mLabel.text = " "
+                pickedNumber.text = " "
                 slider.value = 0
                 isClicked = true
                 slider.isEnabled = true
