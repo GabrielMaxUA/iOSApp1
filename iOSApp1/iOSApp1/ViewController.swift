@@ -15,40 +15,65 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickedNumber: UILabel!
     @IBOutlet weak var slider: UISlider!
     
+    
     // Variables to store current value, multiplication result, and sum result
-    var currentValue = 0
+    var currentValue = 2
     var mResult = 0
     var sResult = 0
+    var isClicked = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    // Action method for the slider's value change
+    //func reacting on a click button event
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        //first click and calling the results func, toggling click state
+        if isClicked{
+            isClicked = false
+            Results()
+        }
+        //if button click state is in false, then call for reset func
+        else{
+            reset()
+        }
+       }
+    
+    // func for the slider's value change
     @IBAction func sliderMove(_ slider: UISlider) {
         // Update the current value based on the slider's position
         currentValue = lroundf(slider.value)
-        // Update the label to show the current value
+        // Updating the label to show the current value
         pickedNumber.text = "\(currentValue)"
     }
     
-    // Action method for calculating and displaying results
+    // func for calculating and displaying results
     @IBAction func Results() {
-        // Calculate the multiplication and sum results
-        mResult = currentValue * currentValue
+        mResult = currentValue * currentValue // Calculate the multiplication and sum results
         sResult = currentValue + currentValue
-        // Display the results
+        // calling the printing results func
         printResults()
     }
     
-    // Method to display the results and toggle the button title
+    // func to display the results and change the button title and disabling the slider
     @IBAction func printResults() {
-        // Update the labels with the calculated results
+        // Updating the labels with the results
         mLabel.text = "\(mResult)"
         sumLabel.text = "\(sResult)"
-        // Reset the current value
-        currentValue = 0
-        // Toggle the button title between "Let's go" and "Reset"
+        button.setTitle("Reset", for: .normal)
+        slider.isEnabled = false
+    }
+    //reseting all labels and changing the button title, bringing the slider to it's original position
+    //enabling the slider
+    @IBAction func reset(){
+                button.setTitle("Let's Go!", for: .normal)
+                currentValue = 2
+                sumLabel.text = "0"
+                mLabel.text = "0"
+                pickedNumber.text = "0"
+                slider.value = 0
+                isClicked = true
+                slider.isEnabled = true
     }
 }
