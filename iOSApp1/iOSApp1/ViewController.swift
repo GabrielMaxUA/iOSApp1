@@ -21,10 +21,16 @@ class ViewController: UIViewController {
     var mResult = 0
     var sResult = 0
     var isClicked = true
+    var sums: [Int] = []
+    var pickedNumbers: [Int] = []
+    var multies: [Int] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        button.backgroundColor = UIColor.systemGray6
+        button.layer.cornerRadius = 8
     }
     
     //func reacting on a click button event
@@ -52,6 +58,9 @@ class ViewController: UIViewController {
     @IBAction func Results() {
         mResult = currentValue * currentValue // Calculate the multiplication and sum results
         sResult = currentValue + currentValue
+        pickedNumbers.append(currentValue)
+        sums.append(sResult)
+        multies.append(mResult)
         // calling the printing results func
         printResults()
     }
@@ -71,9 +80,10 @@ class ViewController: UIViewController {
                 currentValue = 2
                 sumLabel.text = " "
                 mLabel.text = " "
-                pickedNumber.text = " "
+                pickedNumber.text = "2"
                 slider.value = 0
                 isClicked = true
                 slider.isEnabled = true
     }
+
 }
