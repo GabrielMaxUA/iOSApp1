@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         button.backgroundColor = UIColor.systemGray6
         button.layer.cornerRadius = 8
+        
     }
     
     //func reacting on a click button event
