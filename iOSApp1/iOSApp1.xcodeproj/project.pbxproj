@@ -17,6 +17,7 @@
 		389D16DD2C07DB5700D711CE /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 389D16D92C07DB5700D711CE /* back.png */; };
 		389D16DE2C07DB5700D711CE /* buttAster.png in Resources */ = {isa = PBXBuildFile; fileRef = 389D16DA2C07DB5700D711CE /* buttAster.png */; };
 		389D16DF2C07DB5700D711CE /* buttB.png in Resources */ = {isa = PBXBuildFile; fileRef = 389D16DB2C07DB5700D711CE /* buttB.png */; };
+		38DE54D92C0959AB0029FFA1 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 38DE54D82C0959AB0029FFA1 /* back2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		389D16D92C07DB5700D711CE /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		389D16DA2C07DB5700D711CE /* buttAster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttAster.png; sourceTree = "<group>"; };
 		389D16DB2C07DB5700D711CE /* buttB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttB.png; sourceTree = "<group>"; };
+		38DE54D82C0959AB0029FFA1 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				389D16D92C07DB5700D711CE /* back.png */,
+				38DE54D82C0959AB0029FFA1 /* back2.png */,
 				389D16DA2C07DB5700D711CE /* buttAster.png */,
 				389D16DB2C07DB5700D711CE /* buttB.png */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				389D16DD2C07DB5700D711CE /* back.png in Resources */,
+				38DE54D92C0959AB0029FFA1 /* back2.png in Resources */,
 				3890BC482BFED12A00321324 /* Assets.xcassets in Resources */,
 				3890BC4B2BFED12A00321324 /* Base in Resources */,
 				389D16DE2C07DB5700D711CE /* buttAster.png in Resources */,
